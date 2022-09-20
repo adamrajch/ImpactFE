@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#btn {
+  margin: 16px;
+  border: 2px black solid;
+  height: 40px;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  height: 500px;
+  width: 100%;
+  background-color: #21b1a9;
+}
+
+#content {
+  background-color: #ef8180;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.text {
+  width: 200px;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+}
